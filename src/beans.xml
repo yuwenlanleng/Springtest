@@ -1,0 +1,7 @@
+<beans>
+	<bean id="u" class="com.zhk.test.pringDIorIOC.dao.impl.UserDAOImpl" />
+	<bean id="userService" class="com.zhk.test.pringDIorIOC.service.UserService" >
+		<property name="userDAO" bean="u"/>
+	</bean>
+	
+</beans>
